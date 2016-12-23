@@ -1,0 +1,5 @@
+AuthUserFile /home/lctechvietnam/public_html/ansinhviet.com.vn/administrator/.htpasswd
+AuthGroupFile /home/lctechvietnam/public_html/ansinhviet.com.vn/administrator/.htgroups
+AuthType Basic
+AuthName "LWS"
+require group lctechvietnam

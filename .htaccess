@@ -1,0 +1,398 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+ 
+# END WordPress
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 157.55.39.103
+deny from 40.77.167.67
+
+deny from 81.97.120.186
+deny from 103.208.113.211
+deny from 40.77.167.82
+deny from 91.200.12.52
+deny from 185.156.172.140
+deny from 176.203.154.172
+deny from 103.199.120.21
+deny from 109.191.218.210
+deny from 49.150.205.136
+deny from 126.123.239.99
+deny from 178.149.47.65
+deny from 39.47.54.23
+deny from 27.34.11.114
+deny from 176.31.245.146
+deny from 41.105.99.91
+deny from 93.107.123.7
+deny from 83.50.14.223
+deny from 188.251.102.77
+deny from 78.140.167.238
+deny from 113.199.252.110
+deny from 78.207.200.225
+deny from 41.224.140.189
+deny from 92.86.27.58
+deny from 189.103.161.88
+deny from 196.217.244.108
+deny from 182.58.119.240
+deny from 82.171.57.142
+deny from 123.243.46.67
+deny from 39.33.149.55
+deny from 42.201.133.122
+deny from 84.197.61.64
+deny from 109.96.24.227
+deny from 46.7.38.55
+deny from 201.141.178.168
+deny from 60.254.87.231
+deny from 47.198.86.16
+deny from 182.118.25.209
+deny from 81.0.103.124
+deny from 182.118.20.170
+deny from 159.122.133.222
+deny from 182.118.21.224
+deny from 94.154.239.69
+deny from 207.46.13.132
+deny from 49.205.115.192
+deny from 191.32.241.128
+deny from 201.6.231.74
+deny from 182.118.25.221
+deny from 182.118.20.224
+deny from 94.242.252.27
+deny from 170.84.39.166
+deny from 89.185.220.85
+deny from 41.76.244.135
+deny from 89.41.153.180
+deny from 92.244.140.161
+deny from 41.104.160.40
+deny from 119.155.56.19
+deny from 77.21.112.168
+deny from 45.123.43.90
+deny from 211.55.19.11
+deny from 90.190.223.119
+deny from 46.244.22.23
+deny from 46.148.79.67
+
+RewriteCond %{HTTP_REFERER} !^http://anphu.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://anphu.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://ansinhviet.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://ansinhviet.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://ansinhviet.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://ansinhviet.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://blueoceanvn.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://blueoceanvn.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://blueoceanvn.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://blueoceanvn.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cmtsolution.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cmtsolution.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cmtsolution.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cmtsolution.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://crm.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://crm.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dannguyettools.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dannguyettools.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dannguyettools.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dannguyettools.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://diencongnghiepvn.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://diencongnghiepvn.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://diencongnghiepvn.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://diencongnghiepvn.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dula.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dula.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dula.org.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dula.org.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://hrm.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://hrm.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://lctech.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://lctech.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://nhaccuthanhcam.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://nhaccuthanhcam.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://nhaccuthanhcam.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://nhaccuthanhcam.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://noithatcnt.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://noithatcnt.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://noithatcnt.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://noithatcnt.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tbd.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tbd.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tintuc.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tintuc.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tintuc.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tintuc.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tintuc.xedulichtotnhat.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://tintuc.xedulichtotnhat.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://uskomthienduc.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://uskomthienduc.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://uskomthienduc.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://uskomthienduc.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.anphu.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.anphu.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.ansinhviet.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.ansinhviet.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.ansinhviet.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.ansinhviet.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.blueoceanvn.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.blueoceanvn.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.blueoceanvn.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.blueoceanvn.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cmtsolution.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cmtsolution.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cmtsolution.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cmtsolution.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.crm.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.crm.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dannguyettools.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dannguyettools.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dannguyettools.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dannguyettools.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.diencongnghiepvn.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.diencongnghiepvn.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.diencongnghiepvn.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.diencongnghiepvn.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dula.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dula.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dula.org.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dula.org.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.hrm.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.hrm.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lctech.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lctech.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.nhaccuthanhcam.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.nhaccuthanhcam.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.nhaccuthanhcam.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.nhaccuthanhcam.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.noithatcnt.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.noithatcnt.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.noithatcnt.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.noithatcnt.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tbd.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tbd.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tintuc.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tintuc.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tintuc.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tintuc.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tintuc.xedulichtotnhat.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.tintuc.xedulichtotnhat.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.uskomthienduc.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.uskomthienduc.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.uskomthienduc.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.uskomthienduc.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.yenvu.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.yenvu.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.yenvu.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.yenvu.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://yenvu.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://yenvu.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://yenvu.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://yenvu.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://anphu.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://anphu.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://ansinhviet.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://ansinhviet.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://ansinhviet.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://ansinhviet.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://blueoceanvn.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://blueoceanvn.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://blueoceanvn.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://blueoceanvn.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cmtsolution.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cmtsolution.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cmtsolution.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cmtsolution.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://crm.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://crm.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dannguyettools.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dannguyettools.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dannguyettools.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dannguyettools.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://diencongnghiepvn.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://diencongnghiepvn.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://diencongnghiepvn.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://diencongnghiepvn.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dula.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dula.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dula.org.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dula.org.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://hrm.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://hrm.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://lctech.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://lctech.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://nhaccuthanhcam.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://nhaccuthanhcam.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://nhaccuthanhcam.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://nhaccuthanhcam.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://noithatcnt.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://noithatcnt.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://noithatcnt.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://noithatcnt.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tbd.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tbd.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tintuc.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tintuc.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tintuc.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tintuc.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tintuc.xedulichtotnhat.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://tintuc.xedulichtotnhat.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://uskomthienduc.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://uskomthienduc.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://uskomthienduc.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://uskomthienduc.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.anphu.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.anphu.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.ansinhviet.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.ansinhviet.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.ansinhviet.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.ansinhviet.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.blueoceanvn.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.blueoceanvn.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.blueoceanvn.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.blueoceanvn.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cmtsolution.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cmtsolution.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cmtsolution.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cmtsolution.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.crm.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.crm.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dannguyettools.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dannguyettools.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dannguyettools.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dannguyettools.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.diencongnghiepvn.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.diencongnghiepvn.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.diencongnghiepvn.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.diencongnghiepvn.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dula.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dula.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dula.org.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dula.org.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.hrm.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.hrm.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.lctech.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.lctech.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.nhaccuthanhcam.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.nhaccuthanhcam.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.nhaccuthanhcam.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.nhaccuthanhcam.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.noithatcnt.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.noithatcnt.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.noithatcnt.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.noithatcnt.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tbd.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tbd.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tintuc.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tintuc.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tintuc.lctech.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tintuc.lctech.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tintuc.xedulichtotnhat.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.tintuc.xedulichtotnhat.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.uskomthienduc.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.uskomthienduc.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.uskomthienduc.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.uskomthienduc.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.yenvu.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.yenvu.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.yenvu.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.yenvu.lctech.co$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://yenvu.com.vn/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://yenvu.com.vn$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://yenvu.lctech.co/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://yenvu.lctech.co$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+deny from 185.156.172.157
+deny from 95.47.220.200
+deny from 217.65.114.231
+
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+</Files>
+deny from 191.23.13.67
+deny from 88.145.163.26
+deny from 82.4.240.226
+deny from 112.215.65.111
+deny from 91.181.5.228
+deny from 154.73.37.84
+deny from 193.92.184.90
+deny from 47.8.218.52
+deny from 36.71.250.177
+deny from 103.193.88.2
+deny from 110.159.209.29
+deny from 82.79.114.230
+deny from 151.252.240.215
+deny from 46.152.171.103
+deny from 91.121.157.80
+deny from 112.198.103.78
+deny from 78.58.62.150
+deny from 139.195.84.68
+deny from 194.29.137.2
+deny from 59.177.224.88
+deny from 197.2.201.28
+deny from 83.4.131.211
+deny from 47.72.224.62
+deny from 181.143.217.162
+deny from 83.86.28.61
+deny from 179.24.99.97
+deny from 181.188.50.70
+deny from 175.157.163.51
+deny from 200.85.200.146
+deny from 46.196.52.71
+deny from 176.33.240.216
+deny from 204.79.180.109
+deny from 204.79.180.80
+deny from 204.79.180.225
+deny from 204.79.180.77
+deny from 204.79.180.148
+deny from 46.224.226.222
+deny from 31.223.131.134
+deny from 156.194.247.30
+deny from 94.217.16.32
+deny from 178.220.108.46
+deny from 212.64.55.36
+deny from 79.112.83.128
+deny from 77.68.251.98
+deny from 138.121.175.119
+deny from 76.70.61.41
+deny from 117.222.217.170
+deny from 82.49.89.191
+deny from 1.9.102.237
+deny from 110.159.56.62
+deny from 114.130.38.130
+deny from 203.81.85.2
+deny from 45.247.229.50
+deny from 210.195.164.185
+deny from 62.114.217.65
+deny from 90.219.163.111
+deny from 83.176.13.101
+deny from 93.122.250.231
+deny from 126.4.174.239
+deny from 119.153.106.224
+deny from 122.2.245.65
+deny from 213.16.209.90
+deny from 89.46.57.12
+deny from 103.219.47.65
+deny from 112.203.177.152
+deny from 49.35.158.196

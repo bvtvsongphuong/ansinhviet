@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Most Read Content with thumbnails</name>
+	<author>Cedric Walter</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>Copyright (C) 2010 Cedric Walter. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>cedric.walter@gmail.com</authorEmail>
+	<authorUrl>www.waltercedric.com</authorUrl>
+	<version>1.5.0</version>
+	<description>DESCMOSTREAD</description>
+	
+	<languages>
+		<language
+			tag="en-GB">en-GB.mod_mostreadthumb.ini</language>
+	</languages>
+	
+	
+	<files>
+		<filename module="mod_mostreadthumb">helper.php</filename>
+		<filename module="mod_mostreadthumb">index.html</filename>
+		<filename module="mod_mostreadthumb">timthumb.php</filename>
+		<filename module="mod_mostreadthumb">mod_mostreadthumb.php</filename>
+		
+		<filename module="mod_mostreadthumb">tmpl/css.css</filename>
+		<filename module="mod_mostreadthumb">tmpl/default.php</filename>
+		<filename module="mod_mostreadthumb">tmpl/default.jpg</filename>
+		<filename module="mod_mostreadthumb">tmpl/index.html</filename>
+		
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="show_front" type="radio" default="1" label="Frontpage Items" description="PARAMFRONTPAGEITEMS">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="useThumbnails" type="radio" default="1" label="Use Thumbnails" description="USETHUMBNAILS">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="thumbnailWidth" type="text" default="74" label="Thumbnail Width" description="THUMBNAILWIDTH" size="3"/>
+		<param name="thumbnailHeight" type="text" default="74" label="Thumbnail Height" description="THUMBNAILHEIGHT" size="3" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="count" type="text" default="5" label="Count" description="PARAMCOUNT" size="2"/>
+		<param name="catid" type="text" default="" label="Category ID" description="PARAMCATEGORYID" />
+		<param name="secid" type="text" default="" label="Section ID" description="PARAMSECTIONID" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="CACHE">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="CACHETIME" />
+	</params>
+</install>

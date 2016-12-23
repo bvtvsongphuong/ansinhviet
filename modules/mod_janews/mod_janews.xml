@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>JA News Module</name>
+	<author>JoomlArt.com</author>
+	<creationDate>17 March 2010</creationDate>
+	<copyright>J.O.O.M Solutions Co. Ltd.</copyright>
+	<license>GNU/GPL V2 for PHP files. Read Terms of Service for details</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.3.3</version>
+	<description>
+	JA News module version 1.3.2  come with JA Teline II. JA News Frontpage should be installed to used with this module. JA News Frontpage is a part of JA News packages (JA News + JA News frontpage = JA News 1.3 and released with JA Teline II). For Userguide, please visit http://www.joomlart.com/forums/showthread.php?t=11946
+	</description>
+	<languages>
+			<language tag="en-GB">en-GB.mod_janews.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_janews">mod_janews.php</filename>
+		<filename module="mod_janews">helper.php</filename>
+		<filename module="mod_janews">index.html</filename>
+		<folder module="mod_janews">assets</folder>
+		<folder module="mod_janews">tmpl</folder>
+		<filename module="mod_janews">jaimage.php</filename>
+		<folder module="mod_janews">elements</folder>
+	</files>
+	<params addpath="/modules/mod_janews/elements">
+		<param name="@group" type="japaramhelper" value="thumbnail_mode"  hiderow="true" default=" " label=" " description=" " />
+		<param name="moduleclass_sfx" type="text" default="" label="MODULE CLASS SUFFIX" description="MODULE CLASS SUFFIX DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="hiddenClasses" type="textarea" default="" rows="10" cols="30" label="HIDDEN CLASSES" description="HIDDEN CLASSES DESC" />
+		
+		<param name="ordering" type="list" default="ordering" label="ARTICLE ORDER" description="ARTICLE ORDER DESC">
+			<option value="ordering">Ordering</option>
+			<option value="created desc">Created Date</option>
+			<option value="modified desc">Modified Date</option>
+		</param>
+		<param name="catorsec" type="radio" default="1" label="GROUP BY CATEGORY OR SECTION" description="GROUP BY CATEGORY OR SECTION DESC">
+			<option value="1">Category</option>
+			<option value="0">Section</option>
+		</param>
+		<param name="catid" type="textarea" cols="30" rows="10" default="" label="CATEGORY (SECTION) ID" description="CATEGORY (SECTION) ID DESC" />
+		<param name="showcattitle" type="radio" default="1" label="SHOW CATEGORY (SECTION) TITLE DESC" description="SHOW CATEGORY (SECTION) TITLE DESC">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+
+		<param name="introitems" type="text" default="1" label="INTRO ITEMS" description="INTRO ITEMS DESC" />
+		<param name="linkitems" type="text" default="3" label="LINK ITEMS" description="LINK ITEMS DESC" />
+		<param name="maxchars" type="text" default="0" label="MAX CHARS" description="MAX CHARS DESC" />
+		<param name="showcreater" type="radio" default="0" label="SHOW CREATE BY" description="SHOW CREATE BY DESC">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="showdate" type="radio" default="0" label="SHOW CREATE DATE" description="SHOW CREATE DATE DESC">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+
+		<param name="showcontentfrontpage" type="radio" default="1" label="SHOW FRONT PAGE ARTICLE DESC" description="SHOW FRONT PAGE ARTICLE DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="cols" type="text" default="2" label="COLUMNS" description="COLUMNS DESC" />
+		<param name="showreadmore" type="radio" default="0" label="SHOW READMORE" description="SHOW READMORE DESC">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="@title" type="japaramhelper" default="" label="IMAGE SETTING" description="" />
+		<param name="showimage" type="radio" default="1" label="SHOW IMAGE" description="SHOW IMAGE DESC">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="thumbnail_mode" type="list" default="crop" label="THUMBNAIL MODE" description="THUMBNAIL MODE DESC">
+			<option value="none">USING IMAGE SOURCE</option>
+			<option value="resize">USING RESIZE</option>
+			<option value="crop">USING CROP</option>
+		</param>
+		<param name="thumbnail_mode-resize-use_ratio" type="radio" default="1" label="RESIZE WITH THE RATIO" description="RESIZE WITH THE RATIO DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="width" type="text" default="100" label="IMAGE WIDTH" description="IMAGE WIDTH DESC" />
+		<param name="height" type="text" default="100" label="IMAGE HEIGHT" description="IMAGE HEIGHT DESC" />
+
+		<param name="align" type="radio" default="left" label="IMAGE ALIGN" description="IMAGE ALIGN DESC">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="0">None</option>
+		</param>
+	</params>
+</install>

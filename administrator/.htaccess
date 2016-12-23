@@ -1,0 +1,4 @@
+AuthName "Prompt"
+AuthType Basic
+AuthUserFile /home/lctechvietnam/public_html/ansinhviet.com.vn/administrator/.htpasswd
+Require valid-user

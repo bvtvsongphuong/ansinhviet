@@ -1,0 +1,59 @@
+/*
+# ------------------------------------------------------------------------
+# JA Opal Template for  Joomla 1.5
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+ul.ja-bullettin {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+ul.ja-bullettin li {
+	margin: 0;
+	padding: 8px 0;
+	border-bottom: 1px solid #3F3F3F;
+	background: none;
+	position: relative;
+	width: 100%;
+	line-height: normal;
+	display: block;
+}
+
+ul.ja-bullettin li a {
+	color: #DDDDDD;
+}
+
+ul.ja-bullettin li a:hover,
+ul.ja-bullettin li a:focus,
+ul.ja-bullettin li a:active {
+	color: #FFFFFF !important;
+}
+
+ul.ja-bullettin img {
+	position: absolute;
+	left: 0;
+	top: 8px;
+}
+
+ul.ja-bullettin div {
+	line-height: 1.2;
+	display: block;
+}
+
+ul.ja-bullettin span {
+	font-size: 85%;
+	color: #666666;
+	display: block;
+	margin-top: 5px;
+}

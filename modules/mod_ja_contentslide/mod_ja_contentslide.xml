@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5">
+    <name>JA Content Slider Module</name>
+    <creationDate>Dec 2009</creationDate>
+    <author>JoomlArt</author>
+	<copyright>http://www.joomsolutions.com</copyright>
+	<license>GNU/GPL V2 for PHP files. Read Terms of Service for details</license>
+    <authorEmail>webmaster@joomlart.com</authorEmail>
+    <authorUrl>http://www.joomlart.com</authorUrl>
+    <version>1.1.0</version>
+     <description><![CDATA[JA CONTENT SLIDER DESC]]></description>
+	
+     <files>
+	 	<folder module="mod_ja_contentslide">elements</folder>
+      	<folder module="mod_ja_contentslide">tmpl</folder>
+		<folder module="mod_ja_contentslide">assets</folder>
+		<filename module="mod_ja_contentslide">helper.php</filename>
+		<filename module="mod_ja_contentslide">jaimage.php</filename>
+		<filename module="mod_ja_contentslide">index.html</filename>
+		<filename module="mod_ja_contentslide">mod_ja_contentslide.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_ja_contentslide.ini</language>
+	</languages>
+	<params addpath="/modules/mod_ja_contentslide/elements"></params>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="MODULE CLASS SUFFIX" description="MODULE CLASS SUFFIX DESC" />
+       
+       
+		
+		<param name="catid" type="category" default="" label="CATEGORIES SELECTION" description="CATEGORIES SELECTION DESC" />
+		<param name="sort_order_field" type="list" default="created" label="SORT ORDER BY" description="SORT ORDER BY DESC">
+			<option value="created">DATE</option>
+			<option value="ordering">ORDER</option>
+			<option value="hits">HITS</option>
+		</param>
+		<param name="sort_order" type="list" default="DESC" label="ASC OR DESC" description="ASC OR DESC DESC">
+               <option value="ASC">ASC</option>
+               <option value="DESC">DESC</option>
+         </param>
+   	    <param name="numElem" type="text" default="3" label="NUMBER ARTICLES DISPLAY" description="NUMBER ARTICLES DISPLAY" />
+		<param name="maxitems" type="text" default="10" label="MAX ARTCILES" description="MAX ARTCILES DESC" />
+
+		<param name="link_titles" type="list" default="1" label="LINKED TITLES" description="LINKED TITLES DESC">
+			<option value="">Use Global</option>
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+
+		
+		 
+		 	
+		<param name="numchar" type="text" default="50" label="NUMBER CHARACTERS" description="NUMBER CHARACTERS DESC" />
+		<param name="xheight" type="text" default="170" label="HEIGHT OF DIV" description="HEIGHT OF DIV DESC" />
+		  
+		<param name="xwidth" type="text" default="140" label="WIDTH OF DIV" description="WIDTH OF DIV DESC" />
+		
+		 <param name="showimages" type="radio" default="1" label="SHOW IMAGE" description="SHOW IMAGE DESC" >
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		 </param>
+		 
+		<param name="iheight" type="text" default="90" label="HEIGHT OF IMAGE" description="HEIGHT OF IMAGE DESC" />
+		<param name="iwidth" type="text" default="130" label="WIDTH OF IMAGE" description="WIDTH OF IMAGE DESC" />
+	
+		<param name="auto" type="list" default="0" label="AUTO RUN SLIDE" description="AUTO RUN SLIDE DESC" >
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		  </param>
+		 <param name="direction" type="list" default="left" label="DIRECTION" description="DIRECTION DESC" >
+			<option value="left">LEFT</option>
+			<option value="right">RIGHT</option>
+			<option value="up">UP</option>
+			<option value="down">DOWN</option>
+		  </param>
+		   <param name="mode" type="list" default="horizontal" label="MODE" description="MODE DESC" >
+			<option value="horizontal">HORIZONTAL</option>
+			<option value="virtical">VERTICAL</option>
+		  </param>
+		
+
+		<param name="delaytime" type="text" default="5000" label="ROLLING DELAY TIME" description="ROLLING DELAY TIME DESC" />
+		<param name="animationtime" type="text" default="1000" label="ANIMATION TIME" description="ANIMATION TIME DESC" />
+		 
+		  <param name="showtitle" type="radio" default="1" label="TITLE" description="TITLE DESC">
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+        </param>
+		
+		  <param name="showbutton" type="radio" default="1" label="SHOW BUTTON DRIVEN" description="SHOW BUTTON DRIVEN DESC">
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+        </param>
+		
+        <param name="showreadmore" type="radio" default="0" label="READ MORE" description="READ MORE DESC">
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+        </param>
+		 <param name="showintrotext" type="list" default="1" label="INTRO TEXT" description="INTRO TEXT DESC" >
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		  </param> 
+	</params>
+	<params group="advanced">
+		<param name="enable_cache" type="list" default="1" label="CACHING" description="CACHING DESC">
+			<option value="1">Use Cache</option>
+			<option value="0">Don't cache</option>
+		</param>
+		<param name="cache_time" type="text" default="300" label="CACHE TIME" description="CACHE TIME DESC" />
+		 <param name="mootools" type="radio" default="0" label="INCLUDE MOOTOOLS LIBRARY" description="INCLUDE MOOTOOLS LIBRARY DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+        </param>
+		<param name="source-articles-images-thumbnail_mode" type="list" default="crop" label="THUMBNAIL MODE" description="THUMBNAIL MODE DESC">
+			<option value="none">USING IMAGE SOURCE</option>
+			<option value="resize">USING RESIZE</option>
+			<option value="crop">USING CROP</option>
+		</param>
+		
+		<param name="source-articles-images-thumbnail_mode-resize-use_ratio" type="radio" default="0" label="RESIZE WITH THE RATIO" description="RESIZE WITH THE RATIO DESC">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>	 
+	</params>
+</install>
