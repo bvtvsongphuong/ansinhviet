@@ -13,7 +13,8 @@
 
 // Set flag that this is a parent file
 define( '_JEXEC', 1 );
-error_reporting( E_ERROR | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING );
+error_reporting   =   E_ALL & ~E_NOTICE      ; 
+display_errors   =   Off   ;
 define('JPATH_BASE', dirname(__FILE__) );
 
 define( 'DS', DIRECTORY_SEPARATOR );
