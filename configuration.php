@@ -33,8 +33,8 @@ class JConfig {
 	var $ftp_root = '';
 	var $dbtype = 'mysql';
 	var $host = 'localhost';
-	var $user = 'ansinhviet';
-	var $db = 'ansinhviet';
+	var $user = 'asv';
+	var $db = 'asvdb';
 	var $dbprefix = 'rauxanh_';
 	var $mailer = 'mail';
 	var $mailfrom = 'lieuminhfood@yahoo.com';
@@ -50,7 +50,7 @@ class JConfig {
 	var $MetaTitle = '1';
 	var $lifetime = '1500';
 	var $session_handler = 'database';
-	var $password = 'kiem@12';
+	var $password = 'asv123456';
 	var $sitename = 'RAU XANH';
 	var $MetaDesc = 'Joomla! - the dynamic portal engine and content management system';
 	var $MetaKeys = 'joomla, Joomla';
